@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-
+    android:layout_height="match_parent">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/human_hive"
         android:scaleType="centerCrop"
-        />
-
-    <!-- App Name -->
+        android:src="@drawable/human_hive" />
     <TextView
         android:id="@+id/app_name"
         android:layout_width="wrap_content"
@@ -21,14 +14,12 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
-        android:text="HUMAN HIVE"
         android:background="@color/white"
         android:padding="5dp"
+        android:text="HUMAN HIVE"
+        android:textColor="@android:color/black"
         android:textSize="36sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"/>
-
-    <!-- Button for Basic Human List -->
+        android:textStyle="bold" />
     <Button
         android:id="@+id/btn_basic_human_list"
         android:layout_width="wrap_content"
@@ -36,24 +27,21 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginTop="100dp"
-        android:text="Basic Human List"
-        android:textSize="18sp"
-        android:padding="16dp"
         android:backgroundTint="@android:color/holo_blue_light"
-        android:textColor="@android:color/white"/>
-
-    <!-- Button for Custom ListView -->
+        android:padding="16dp"
+        android:text="Basic Human List"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
     <Button
         android:id="@+id/btn_custom_listview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/btn_basic_human_list"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="Custom ListView"
-        android:textSize="18sp"
-        android:padding="16dp"
         android:backgroundTint="@android:color/holo_green_light"
-        android:textColor="@android:color/white"/>
-
+        android:padding="16dp"
+        android:text="Custom ListView"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 </RelativeLayout>
